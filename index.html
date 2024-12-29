@@ -1,148 +1,177 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Saileela Josyula - Portfolio</title>
     <style>
-        /* Basic CSS to style the portfolio */
-        body {
-            font-family: Arial, sans-serif;
+        /* Basic reset */
+        body, h1, h2, p, a {
             margin: 0;
             padding: 0;
+            font-family: 'Arial', sans-serif;
+        }
+
+        /* General layout */
+        body {
             background-color: #f4f4f4;
             color: #333;
+            line-height: 1.6;
+            padding: 20px;
         }
 
         header {
-            background-color: #333;
-            color: #fff;
-            padding: 20px;
+            background-color: #0073e6;
+            color: white;
+            padding: 20px 0;
             text-align: center;
         }
 
         header h1 {
-            margin: 0;
+            font-size: 3em;
         }
 
-        nav ul {
-            list-style: none;
-            padding: 0;
-            display: flex;
-            justify-content: center;
+        header p {
+            font-size: 1.2em;
         }
 
-        nav ul li {
-            margin: 0 20px;
+        /* Navigation */
+        nav {
+            margin: 20px 0;
+            text-align: center;
         }
 
-        nav ul li a {
-            color: #fff;
+        nav a {
+            margin: 0 15px;
             text-decoration: none;
-            font-size: 18px;
+            color: #0073e6;
+            font-size: 1.1em;
         }
 
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* Section Styling */
         section {
-            padding: 40px 10%;
-            text-align: center;
+            margin-bottom: 40px;
         }
 
-        .projects,
-        .skills {
-            display: flex;
-            justify-content: space-around;
-            flex-wrap: wrap;
+        section h2 {
+            font-size: 2em;
+            margin-bottom: 10px;
+            color: #0073e6;
         }
 
-        .project-card,
-        .skill-card {
-            background-color: #fff;
+        section p {
+            font-size: 1.1em;
+            margin-bottom: 10px;
+        }
+
+        /* Projects Grid */
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .project {
+            background-color: white;
             padding: 20px;
-            margin: 10px;
-            width: 250px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
 
+        .project img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        /* Footer */
         footer {
-            background-color: #333;
-            color: #fff;
             text-align: center;
-            padding: 10px;
+            padding: 20px;
+            background-color: #333;
+            color: white;
         }
 
+        footer a {
+            color: #f4f4f4;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Media Query for Mobile */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2.5em;
+            }
+
+            section p {
+                font-size: 1em;
+            }
+
+            .projects {
+                grid-template-columns: 1fr;
+            }
+        }
     </style>
 </head>
-
 <body>
 
-    <!-- Header with Navigation -->
+    <!-- Header Section -->
     <header>
-        <h1>Saileela Josyula - Portfolio</h1>
-        <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+        <h1>Saileela Josyula</h1>
+        <p>Software Developer | Data Enthusiast | Full-Stack Developer</p>
     </header>
+
+    <!-- Navigation Links -->
+    <nav>
+        <a href="#about">About Me</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
 
     <!-- About Section -->
     <section id="about">
         <h2>About Me</h2>
-        <p>Hi! I'm Saileela Josyula, an aspiring software engineer and data scientist with a passion for building innovative solutions. I have a background in Information Technology and experience in both software development and data analysis. I am passionate about continuous learning and looking forward to building a successful career in technology.</p>
+        <p>Hi, I’m Saileela, a passionate software developer with a background in Information Technology. I specialize in full-stack development, data analysis, and cloud solutions.</p>
     </section>
 
     <!-- Projects Section -->
     <section id="projects">
         <h2>My Projects</h2>
         <div class="projects">
-            <!-- Project 1 -->
-            <div class="project-card">
-                <h3>Project Name</h3>
-                <p>Description of the project goes here. It could be about technologies used, purpose, and what you learned.</p>
-                <a href="#">See More</a>
+            <div class="project">
+                <img src="project1.jpg" alt="Project 1">
+                <h3>Project Title 1</h3>
+                <p>Description of the project, technologies used, and its impact.</p>
             </div>
-            <!-- Project 2 -->
-            <div class="project-card">
-                <h3>Project Name</h3>
-                <p>Description of the project goes here. It could be about technologies used, purpose, and what you learned.</p>
-                <a href="#">See More</a>
+            <div class="project">
+                <img src="project2.jpg" alt="Project 2">
+                <h3>Project Title 2</h3>
+                <p>Description of the project, technologies used, and its impact.</p>
             </div>
-            <!-- Add more projects here -->
-        </div>
-    </section>
-
-    <!-- Skills Section -->
-    <section id="skills">
-        <h2>Skills</h2>
-        <div class="skills">
-            <div class="skill-card">
-                <h3>Skill 1</h3>
-                <p>Detail about your skill here.</p>
-            </div>
-            <div class="skill-card">
-                <h3>Skill 2</h3>
-                <p>Detail about your skill here.</p>
-            </div>
-            <!-- Add more skills here -->
+            <!-- Add more project blocks as needed -->
         </div>
     </section>
 
     <!-- Contact Section -->
     <section id="contact">
         <h2>Contact Me</h2>
-        <p>If you'd like to get in touch with me, feel free to <a href="mailto:youremail@example.com">email me</a>.</p>
+        <p>Feel free to reach out to me via email or LinkedIn.</p>
+        <p>Email: saileela@example.com</p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/saileela">linkedin.com/in/saileela</a></p>
     </section>
 
-    <!-- Footer -->
+    <!-- Footer Section -->
     <footer>
-        <p>&copy; 2024 Saileela Josyula. All rights reserved.</p>
+        <p>&copy; 2024 Saileela Josyula | All Rights Reserved</p>
     </footer>
 
 </body>
-
 </html>
