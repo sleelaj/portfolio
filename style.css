@@ -32,20 +32,20 @@ body {
 
 .navbar a {
     text-decoration: none; /* Remove underline */
-    color: #010101; /* White text */
+    color: #f8f1f1; /* White text */
     font-size: 1rem; /* Font size */
     font-weight: bold;
     transition: color 0.3s; /* Smooth hover effect */
 }
 
 .navbar ul li a:hover {
-    color: #6203c8;
+    color: #aa6600;
 }
 
 /* Landing Section */
 #landing {
-    background: linear-gradient(to right, #6a11cb, #2575fc);
-    color: #c12446;
+    background: linear-gradient(to right, #6a11cb, #3b4c6a);
+    color: #f9f5f6;
     padding: 100px 20px;
     height: 100vh;
     display: flex;
@@ -65,7 +65,7 @@ body {
 }
 
 .skill {
-    background: #f4f4f4;
+    background: #d40051;
     display: inline-block;
     margin: 10px;
     padding: 10px 20px;
