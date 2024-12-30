@@ -3,85 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Saileela Josyula - Portfolio</title>
+    <title>Saileela Josyula Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script> <!-- For icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
 </head>
 <body>
-    <!-- Header Section with Navigation -->
-    <header id="home">
-        <nav>
-            <div class="logo">Saileela Josyula</div>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-        <div class="hero">
-            <h1>Hi, I'm Saileela Josyula</h1>
-            <p>Full Stack Developer | Data Enthusiast | Cloud Solutions Expert</p>
-        </div>
-    </header>
-
-    <!-- About Section -->
-    <section id="about">
-        <div class="container">
-            <h2>About Me</h2>
-            <p>Hi, I'm Saileela. A passionate software developer specializing in Full Stack development, Cloud solutions, and Data Science.</p>
+    <!-- Landing Section -->
+    <section id="landing">
+        <div class="intro">
+            <h1>Hi, I'm <span id="name">Saileela Josyula</span></h1>
+            <h2><span id="animated-text"></span></h2>
         </div>
     </section>
 
+    <!-- About Section -->
+    <section id="about" data-aos="fade-up">
+        <h2>About Me</h2>
+        <p>Passionate developer with expertise in building innovative solutions...</p>
+    </section>
+
     <!-- Projects Section -->
-    <section id="projects">
-        <div class="container">
-            <h2>Projects</h2>
-            <div class="projects-grid">
-                <div class="project-card">
-                    <img src="project1.jpg" alt="Project 1">
-                    <h3>Project 1</h3>
-                    <p>Project description goes here.</p>
-                </div>
-                <div class="project-card">
-                    <img src="project2.jpg" alt="Project 2">
-                    <h3>Project 2</h3>
-                    <p>Project description goes here.</p>
-                </div>
-            </div>
+    <section id="projects" data-aos="fade-up">
+        <h2>Projects</h2>
+        <div class="project">
+            <h3>Project Title</h3>
+            <p>Description of the project.</p>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" data-aos="fade-up">
+        <h2>Skills</h2>
+        <div class="skills-list">
+            <div class="skill">HTML</div>
+            <div class="skill">CSS</div>
+            <div class="skill">JavaScript</div>
         </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact">
-        <div class="container">
-            <h2>Contact Me</h2>
-            <p>If you'd like to get in touch, feel free to send a message below!</p>
-            <form>
-                <input type="text" name="name" placeholder="Your Name" required>
-                <input type="email" name="email" placeholder="Your Email" required>
-                <textarea name="message" placeholder="Your Message" required></textarea>
-                <button type="submit">Send Message</button>
-            </form>
-        </div>
+    <section id="contact" data-aos="fade-up">
+        <h2>Contact</h2>
+        <form>
+            <input type="text" placeholder="Your Name">
+            <input type="email" placeholder="Your Email">
+            <textarea placeholder="Your Message"></textarea>
+            <button type="submit">Send</button>
+        </form>
     </section>
 
-    <!-- Footer Section -->
+    <!-- Footer -->
     <footer>
-        <p>&copy; 2024 Saileela Josyula | All Rights Reserved</p>
+        <p>© 2024 Saileela Josyula. All Rights Reserved.</p>
     </footer>
 
-    <!-- JavaScript for smooth scrolling -->
-    <script>
-        // Smooth scroll for navigation links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
-        });
-    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="script.js"></script>
 </body>
 </html>
