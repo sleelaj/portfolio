@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 // Typed.js for Animated Text
 var typed = new Typed('#animated-text', {
-    strings: ["a Developer.", "a Designer.", "an Innovator."],
+    strings: ["a Full Stack Developer", "a Software Engineer", "an Innovator"],
     typeSpeed: 50,
     backSpeed: 25,
     loop: true,
