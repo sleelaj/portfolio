@@ -12,7 +12,7 @@ body {
     position: fixed;
     top: 0;
     width: 100%;
-    background: #07bdf4;
+    background: #6a4069;
     padding: 10px 0;
     box-shadow: 0 4px 6px rgba(118, 114, 114, 0.1);
     z-index: 1000;
@@ -32,20 +32,20 @@ body {
 
 .navbar a {
     text-decoration: none; /* Remove underline */
-    color: #fff; /* White text */
+    color: #010101; /* White text */
     font-size: 1rem; /* Font size */
     font-weight: bold;
     transition: color 0.3s; /* Smooth hover effect */
 }
 
 .navbar ul li a:hover {
-    color: #6a11cb;
+    color: #6203c8;
 }
 
 /* Landing Section */
 #landing {
     background: linear-gradient(to right, #6a11cb, #2575fc);
-    color: #fff;
+    color: #c12446;
     padding: 100px 20px;
     height: 100vh;
     display: flex;
