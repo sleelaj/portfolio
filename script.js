@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 var typed = new Typed('#animated-text', {
-    strings: ["a Full Stack Developer", "a Software Engineer", "an Innovator"],
+    strings: ["a Full Stack Java Developer", "a Software Engineer", "an Innovator"],
     typeSpeed: 50,
     backSpeed: 25,
     loop: true,
