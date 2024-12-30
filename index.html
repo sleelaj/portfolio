@@ -4,168 +4,66 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Saileela Josyula - Portfolio</title>
-    <style>
-        /* Basic reset */
-        body, h1, h2, p, a {
-            margin: 0;
-            padding: 0;
-            font-family: 'Arial', sans-serif;
-        }
-
-        /* General layout */
-        body {
-            background-color: #f4f4f4;
-            color: #333;
-            line-height: 1.6;
-            padding: 20px;
-        }
-
-        header {
-            background-color: #0073e6;
-            color: white;
-            padding: 20px 0;
-            text-align: center;
-        }
-
-        header h1 {
-            font-size: 3em;
-        }
-
-        header p {
-            font-size: 1.2em;
-        }
-
-        /* Navigation */
-        nav {
-            margin: 20px 0;
-            text-align: center;
-        }
-
-        nav a {
-            margin: 0 15px;
-            text-decoration: none;
-            color: #0073e6;
-            font-size: 1.1em;
-        }
-
-        nav a:hover {
-            text-decoration: underline;
-        }
-
-        /* Section Styling */
-        section {
-            margin-bottom: 40px;
-        }
-
-        section h2 {
-            font-size: 2em;
-            margin-bottom: 10px;
-            color: #0073e6;
-        }
-
-        section p {
-            font-size: 1.1em;
-            margin-bottom: 10px;
-        }
-
-        /* Projects Grid */
-        .projects {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-            gap: 20px;
-        }
-
-        .project {
-            background-color: white;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-
-        .project img {
-            width: 100%;
-            height: auto;
-            border-radius: 8px;
-        }
-
-        /* Footer */
-        footer {
-            text-align: center;
-            padding: 20px;
-            background-color: #333;
-            color: white;
-        }
-
-        footer a {
-            color: #f4f4f4;
-            text-decoration: none;
-        }
-
-        footer a:hover {
-            text-decoration: underline;
-        }
-
-        /* Media Query for Mobile */
-        @media (max-width: 768px) {
-            header h1 {
-                font-size: 2.5em;
-            }
-
-            section p {
-                font-size: 1em;
-            }
-
-            .projects {
-                grid-template-columns: 1fr;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script> <!-- For icons -->
 </head>
 <body>
-
-    <!-- Header Section -->
-    <header>
-        <h1>Saileela Josyula</h1>
-        <p>Software Developer | Data Enthusiast | Full-Stack Developer</p>
+    <!-- Header Section with Navigation -->
+    <header id="home">
+        <nav>
+            <div class="logo">Saileela Josyula</div>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="hero">
+            <h1>Hi, I'm Saileela Josyula</h1>
+            <p>Full Stack Developer | Data Enthusiast | Cloud Solutions Expert</p>
+        </div>
     </header>
-
-    <!-- Navigation Links -->
-    <nav>
-        <a href="#about">About Me</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
-    </nav>
 
     <!-- About Section -->
     <section id="about">
-        <h2>About Me</h2>
-        <p>Hi, I’m Saileela, a passionate software developer with a background in Information Technology. I specialize in full-stack development, data analysis, and cloud solutions.</p>
+        <div class="container">
+            <h2>About Me</h2>
+            <p>Hi, I'm Saileela. A passionate software developer specializing in Full Stack development, Cloud solutions, and Data Science.</p>
+        </div>
     </section>
 
     <!-- Projects Section -->
     <section id="projects">
-        <h2>My Projects</h2>
-        <div class="projects">
-            <div class="project">
-                <img src="project1.jpg" alt="Project 1">
-                <h3>Project Title 1</h3>
-                <p>Description of the project, technologies used, and its impact.</p>
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <img src="project1.jpg" alt="Project 1">
+                    <h3>Project 1</h3>
+                    <p>Project description goes here.</p>
+                </div>
+                <div class="project-card">
+                    <img src="project2.jpg" alt="Project 2">
+                    <h3>Project 2</h3>
+                    <p>Project description goes here.</p>
+                </div>
             </div>
-            <div class="project">
-                <img src="project2.jpg" alt="Project 2">
-                <h3>Project Title 2</h3>
-                <p>Description of the project, technologies used, and its impact.</p>
-            </div>
-            <!-- Add more project blocks as needed -->
         </div>
     </section>
 
     <!-- Contact Section -->
     <section id="contact">
-        <h2>Contact Me</h2>
-        <p>Feel free to reach out to me via email or LinkedIn.</p>
-        <p>Email: saileela@example.com</p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/saileela-josyula-1091b019a/">linkedin.com/in/saileela</a></p>
+        <div class="container">
+            <h2>Contact Me</h2>
+            <p>If you'd like to get in touch, feel free to send a message below!</p>
+            <form>
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
     </section>
 
     <!-- Footer Section -->
@@ -173,5 +71,17 @@
         <p>&copy; 2024 Saileela Josyula | All Rights Reserved</p>
     </footer>
 
+    <!-- JavaScript for smooth scrolling -->
+    <script>
+        // Smooth scroll for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
 </body>
 </html>
